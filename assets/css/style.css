@@ -7,7 +7,7 @@ body {
     color: #707070;
     margin: 0px;
     padding: 0px;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     position: relative;
   }
@@ -479,6 +479,7 @@ footer{
     .collection{
         margin: 0px;
         min-height: 700px;
+        width: 100%;
     }
 
     .image-grid {
@@ -494,12 +495,13 @@ footer{
         object-fit: cover;
         z-index: 2;
         min-height: 80%;
+        width: 100%;
     }
 
     .box{
         grid-column: 1 / span 5;
         grid-row: 1 / 7;
-        width: auto;
+        width: 100%;
         min-height: 80%;
         background-color: #364a53;
 
@@ -705,20 +707,16 @@ footer{
 
 
 
-@media (max-width: 800px) {
-
-
-    
-
-}
-
-
-
 
 
 
 @media (max-width: 800px) {
 
+
+    a {
+        padding: 0px;
+        margin: 0px;
+    }
     body {
         width: 100%;
     }
@@ -761,7 +759,7 @@ footer{
         justify-content: space-between;
         align-items: center;
         text-align: left;
-        padding: 48px 24px 0 24px;
+        padding: 24px 24px 0 24px;
         background-color: #FFF5D3;
     }
 
@@ -847,26 +845,23 @@ footer{
         display: none;
     }
 
-    .mob-btn {
-        display: block;
-        font-size: 16px;
-        position: relative;
-        height: 50px;
-        padding-top: 24px;
-    }
-    
-    
-    .mob-btn button {
-        display: flex;
-        border: 1px solid #364a53;
-        background-color: transparent;
-        padding: 12px 48px 12px 48px;
-        margin: 0;
-        width: 100%;
-        text-align: center;
-        justify-content: center;
+    #etsy-mob-btn {
+        width: 90%;
+        margin: 0px;
     }
 
+    .mob-btn {
+        border: 1px solid #364a53;
+        height: auto;
+        display: inline-block;
+        margin: 0px;
+        text-align: center;
+        align-content: center;
+        padding: 16px 12px 16px 12px;
+        width: auto;
+        overflow: visible;
+
+    }
     /*Meet Hatty*/
 
     .profile {
@@ -907,42 +902,28 @@ footer{
 
     /* links */
 
-    .btn {
-        position: relative;
-        height: 100px;
-        font-size: 16px;
-        padding-top: 24px;
-        
-    }
-    .btn button {
-        display: flex;
-        border: 1px solid #364a53;
-        background-color: transparent;
-        padding: 12px 24px 12px 24px;
-        margin: 0;
-        position: absolute;
-        transform: translateX(-50%);
-        width: 80%;
-        text-align: center;
-        justify-content: center;
-    }
 
     .links {
-
-        padding-left: 12px;
-        padding-right: 12px;
+        display: flex;
+        padding-left: 6px;
+        padding-right: 6px;
         padding-top: 24px;
-        width: 90%;
         margin-left: auto;
         margin-right: auto;
         background-color: #F8FDFF;
     }
 
     .link-card {
-        display: block;
+        display: flex;
+        flex-direction: column;
         justify-items: center;
         max-width: 100%;
         padding: 10px;
+    }
+
+    .link-card img {
+        max-height: 150px;
+        object-fit: cover;
     }
 
     /* Contact */
