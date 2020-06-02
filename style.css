@@ -1,0 +1,975 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #707070;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    justify-content: center;
+    position: relative;
+  }
+  
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 58px;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 0px;
+    color: #364a53;
+    opacity: 1;
+}
+  
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0px;
+    color: #364a53;
+    opacity: 1;
+}
+  
+h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    color: #e46f22;
+    opacity: 1;
+}
+
+h4 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #364a53;
+    opacity: 1;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+    padding: 24px;
+}
+
+a:hover {
+    color: darkorange;
+}
+
+button:hover {
+    color: darkorange;
+}
+
+button {
+    font-size: 14px;
+    font-variant: small-caps;
+}
+
+section{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+.container {
+    max-width: 1476px;
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+ul{
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Header */
+
+#logo {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    max-width: 100%;
+    background-color: #FFF5D3;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 50px;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+
+/* Hero section */
+
+.hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #FFF5D3;
+    margin: 0px;
+    
+}
+
+.hero-img {
+    object-fit: cover;
+    object-position: center;
+    width: auto;
+    justify-content: center;
+    line-height: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 120px 120px 120px;
+    z-index: 50;
+    max-width: 1440px;
+}
+
+#right-img{
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+#left-img {
+    grid-column: 2 / 3;
+}
+
+.hero h1{
+    display: inline-block;
+    color: #364A53;
+    font-weight: 400;
+    width: 80%;
+    margin-left: 120px;
+    padding-bottom: 48px;
+    padding-top: 100px;
+}
+
+/* Introduction */
+
+.intro {
+    display: inline-block;
+    width: 100%;
+    max-height: 800px;
+    background-color: #FFEAD6;
+}
+
+.intro h2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 32px;
+    text-align: left;
+    line-height: 48px;
+    width: 60%;
+    margin-left: 120px;
+}
+
+/* Collection */
+
+.collection{
+    margin: 0px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 100px repeat(4, 1fr) 100px;
+    grid-template-rows: 100px repeat(4, 1fr) 100px;
+
+}
+
+.image-grid img{
+    grid-column: 2 / span 5;
+    grid-row: 2 / span 4;
+    object-fit: cover;
+    z-index: 2;
+    min-height: 80%;
+}
+
+.box{
+    grid-column: 1 / span 5;
+    grid-row: 1 / 7;
+    width: auto;
+    background-color: #364a53;
+
+}
+
+div .inset-images {
+    display: flex;
+    max-width: 300px;
+    min-height: 400px;
+    padding-right: 24px;
+}
+
+
+.text-block-right div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px;
+    max-width: 60%;
+    padding-left: 100px;
+}
+
+.collection-img {
+    display: block;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+
+/* Etsy */
+
+.etsy{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.etsy .intro-text {
+    text-align: center;
+    max-width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 50px;
+}
+
+
+.products {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.products ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.products li {
+    padding: 12px;
+}
+
+li p{
+    text-align: center;
+}
+
+ul h4{
+    text-align: center;
+}
+
+.btn {
+    position: relative;
+    height: 100px;
+    padding-top: 24px;
+}
+
+.mob-btn {
+    display: none;
+}
+
+
+.btn button {
+    display: flex;
+    border: 1px solid #364a53;
+    background-color: transparent;
+    padding: 12px 48px 12px 48px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Meet Hatty */
+
+
+.text-block-left div{ 
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 120px;
+    width: 60%;
+}
+
+#peach-box {
+    background-color: #FFEAD6;
+    grid-column: 2 / span 6;
+    grid-row: 1 / span 7;
+    width: auto;
+}
+
+.image-grid #hatty {
+    grid-column: 1 / span 6;
+    grid-row: 2 / span 4;
+    object-fit: cover;
+    z-index: 2;
+    margin-left: -100px;
+}
+
+.image-grid #wip-studio {
+    grid-column: 4 / span 3;
+    grid-row: 4 / span 2;
+    max-width: 400px;
+    margin-left: -100px;
+}
+
+.secondary-btn {
+    position: relative;
+}
+
+.text-block-left div .secondary-btn {
+    border: 0px solid #364a53;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: underline;
+    background-color: transparent;
+    margin: 0;
+    padding-top: 24px;
+}
+
+/* links */
+
+.links {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+    background-color: #F8FDFF;
+}
+
+.link-card {
+    display: inline-block;
+    text-align: center;
+    padding-right: 24px;
+}
+
+/* Contact */
+
+.contact {
+    color: white;
+    display: block;
+    align-content: center;
+    background-color: #364A53;
+    padding: 100px 0 100px 0;
+    text-align: center; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contact h2{
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #364A53;
+    height: 75px;
+    align-items: center;
+    max-width: 100%;
+    color: grey;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px) {
+    
+    h1 {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 42px;
+        font-weight: 300;
+        line-height: 1.1;
+        letter-spacing: 0px;
+        color: #364a53;
+        opacity: 1;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .navigation{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    /* Hero */
+
+    .hero-img {
+        padding: 0 60px 60px 60px;
+    }
+
+    .hero h1 {
+        margin-left: 60px;
+    }
+
+    #logo {
+        font-size: 16px;
+    }
+
+    
+
+    .mobile-nav{
+        display: none;
+    }
+
+    .navigation .nav-links {
+        padding-left: 50px;
+        opacity: 0.8;
+    }
+
+
+    /* Introduction */
+    
+
+    .intro h2 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        font-size: 24px;
+        text-align: left;
+        line-height: 36px;
+        width: 80%;
+        margin-left: 60px;
+    }
+
+    /* Collection */
+
+    .collection{
+        margin: 0px;
+        min-height: 700px;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: 50px repeat(4, 1fr) 50px;
+        grid-template-rows: 50px repeat(4, 1fr) 50px;
+
+    }
+
+    .image-grid img{
+        grid-column: 2 / span 5;
+        grid-row: 2 / span 4;
+        object-fit: cover;
+        z-index: 2;
+        min-height: 80%;
+    }
+
+    .box{
+        grid-column: 1 / span 5;
+        grid-row: 1 / 7;
+        width: auto;
+        min-height: 80%;
+        background-color: #364a53;
+
+    }
+
+    div .inset-images {
+        display: flex;
+        max-width: 300px;
+        min-height: 400px;
+        padding-right: 24px;
+    }
+
+
+    .text-block-right div {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0px;
+        max-width: 60%;
+        padding-left: 100px;
+    }
+
+    .collection-img {
+        display: block;
+        max-width: 400px;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px;
+    }
+
+    /* Etsy */
+
+    .etsy{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .etsy .intro-text {
+        text-align: center;
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 24px;
+    }
+
+
+    .products {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .products ul{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .products li {
+        padding: 12px;
+    }
+
+    li p{
+        text-align: center;
+    }
+
+    ul h4{
+        text-align: center;
+    }
+
+    .btn {
+        position: relative;
+        height: 50px;
+        padding-top: 24px;
+    }
+
+    .mob-btn {
+        display: none;
+    }
+
+    .btn button {
+        display: flex;
+        border: 1px solid #364a53;
+        background-color: transparent;
+        padding: 12px 48px 12px 48px;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Meet Hatty */
+
+
+    .text-block-left div{ 
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 120px;
+        width: 60%;
+    }
+
+    #peach-box {
+        background-color: #FFEAD6;
+        grid-column: 2 / span 6;
+        grid-row: 1 / span 7;
+        width: auto;
+    }
+
+    .image-grid #hatty {
+        grid-column: 1 / span 5;
+        grid-row: 2 / span 4;
+        object-fit: cover;
+        z-index: 2;
+        margin-left: 0px;
+    }
+
+    .image-grid #wip-studio {
+        grid-column: 4 / span 3;
+        grid-row: 4 / span 2;
+        max-width: 400px;
+        margin-left: 0px;
+    }
+
+    .secondary-btn {
+        position: relative;
+    }
+
+    .text-block-left div .secondary-btn {
+        border: 0px solid #364a53;
+        font-size: 14px;
+        text-align: left;
+        text-decoration: underline;
+        background-color: transparent;
+        margin: 0;
+        padding-top: 24px;
+    }
+
+    /* links */
+
+    .links {
+        display: flex;
+        padding: 50px 5% 50px 5%;
+        background-color: #F8FDFF;
+    }
+
+    .link-card {
+        display: inline-block;
+        text-align: center;
+        padding-right: 24px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    
+    h1 {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 42px;
+        font-weight: 300;
+        line-height: 1.1;
+        letter-spacing: 0px;
+        color: #364a53;
+        opacity: 1;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    /* Hero */
+
+    #logo {
+        font-size: 16px;
+    }
+
+    .hero-img {
+        padding: 0 0px 0px 0px;
+    }
+   
+    /* Introduction */
+
+  
+    .image-grid #wip-studio {
+       display: none;
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 800px) {
+
+
+    .image-grid #hatty {
+        grid-column: 1 / span 5;
+        grid-row: 2 / span 4;
+        object-fit: cover;
+        z-index: 2;
+        margin-left: 0px;
+    }
+
+    .hero-img {
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /* Hero */
+
+    .hero h1 {
+        margin-left: 24px;
+    }
+
+    #logo {
+        font-size: 16px;
+    }
+
+
+    .navigation{
+        display: none;
+    }
+
+    .mobile-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 0 24px 0 24px;
+        background-color: #FFF5D3;
+    }
+
+    .navigation .nav-links {
+        padding: 0px;
+        margin: 0px;
+        opacity: 0.8;
+    }
+
+
+    
+
+    /* Introduction */
+
+    .intro h2 {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        margin-left: 24px;
+        width: 75%;
+    }
+    
+
+
+    /* Collection */
+
+
+    .image-grid {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #364A53;
+    }
+
+    .image-grid img {
+        width: 90%;
+        margin-left: 24px;
+        margin-right: 24px;
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+   
+    .text-block-right div{ 
+        position: relative;
+        top: 0%;
+        transform: translateY(0%);
+        max-width: 90%;
+        padding-left: 24px;
+        padding-top: 24px;
+        padding-bottom: 48px;
+    }
+        
+
+    /*Etsy*/
+
+    .products ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .products {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .etsy{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .etsy .intro-text {
+        text-align: left;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 50px;
+    }
+
+    #etsy-btn {
+        display: none;
+    }
+
+    .mob-btn {
+        display: block;
+        font-size: 16px;
+        position: relative;
+        height: 50px;
+        padding-top: 24px;
+    }
+    
+    
+    .mob-btn button {
+        display: flex;
+        border: 1px solid #364a53;
+        background-color: transparent;
+        padding: 12px 48px 12px 48px;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /*Meet Hatty*/
+
+    .profile {
+        display: block;
+        width: 100%;
+    }
+
+    #wip-studio {
+        display: none;
+    }
+
+    .image-grid #hatty {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-bottom: 24px;
+        
+    }
+
+    .profile .image-grid {
+        display: block;
+        width: 100%;
+        background-color: #FFEAD6;
+    }
+
+    .text-block-left div{ 
+        position: relative;
+        top: 0%;
+        transform: translateY(0%);
+        max-width: 100%;
+        margin: 0px;
+        padding-left: 24px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        width: 80%;
+    }
+
+    /* links */
+
+    .btn {
+        position: relative;
+        height: 100px;
+        font-size: 16px;
+        padding-top: 24px;
+        
+    }
+    .btn button {
+        display: flex;
+        border: 1px solid #364a53;
+        background-color: transparent;
+        padding: 12px 24px 12px 24px;
+        margin: 0;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .links {
+
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 24px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #F8FDFF;
+    }
+
+    .link-card {
+        display: block;
+        justify-items: center;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    /* Contact */
+
+    .contact {
+        color: white;
+        display: block;
+        align-content: center;
+        background-color: #364A53;
+        padding: 24px 24px 100px 24px;
+        text-align: center; 
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .contact h2{
+        color: white;
+    }
+
+    footer div{
+        display: flex;
+        justify-content: space-between;
+        background-color: #364A53;
+        height: 75px;
+        align-items: center;
+        max-width: 100%;
+        color: grey;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+}
