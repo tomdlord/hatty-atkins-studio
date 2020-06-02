@@ -262,13 +262,17 @@ div .inset-images {
 .outline-btn {
     border: 1px solid #364a53;
     height: auto;
-    width: 150px;
+    width: auto;
     display: block;
     text-align: center;
     justify-content: center;
-    padding: 12px 48px 12px 48px;
+    padding: 12px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#etsy-btn {
+    max-width: 20%;
 }
 
 
@@ -571,26 +575,13 @@ footer{
         text-align: center;
     }
 
-    .btn {
-        position: relative;
-        height: 50px;
-        padding-top: 24px;
-    }
+
 
     .mob-btn {
         display: none;
     }
 
-    .btn button {
-        display: flex;
-        border: 1px solid #364a53;
-        background-color: transparent;
-        padding: 12px 48px 12px 48px;
-        margin: 0;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+    
 
     /* Meet Hatty */
 
@@ -815,6 +806,11 @@ footer{
 
     /*Etsy*/
 
+    .intro-text p {
+
+        padding-bottom: 24px;
+    }
+
     .products ul{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -822,8 +818,8 @@ footer{
     }
 
     .products {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     .etsy{
@@ -846,8 +842,14 @@ footer{
     }
 
     #etsy-mob-btn {
-        width: 90%;
-        margin: 0px;
+        height: auto;
+        max-width: 100%;
+        display: block;
+        text-align: center;
+        justify-content: center;
+        padding: 12px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .mob-btn {
@@ -905,11 +907,9 @@ footer{
 
     .links {
         display: flex;
-        padding-left: 6px;
-        padding-right: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
         padding-top: 24px;
-        margin-left: auto;
-        margin-right: auto;
         background-color: #F8FDFF;
     }
 
@@ -922,7 +922,7 @@ footer{
     }
 
     .link-card img {
-        max-height: 150px;
+        max-height: 200px;
         object-fit: cover;
     }
 
