@@ -87,7 +87,11 @@ section{
 }
 
 .container {
-    max-width: 1476px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 48px;
+    padding-right: 48px;
 }
 
 header {
@@ -141,12 +145,11 @@ ul{
 .hero-img {
     object-fit: cover;
     object-position: center;
-    width: auto;
     justify-content: center;
     line-height: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 120px 120px 120px;
+    padding-bottom: 60px;
     z-index: 50;
     max-width: 1440px;
 }
@@ -225,6 +228,9 @@ div .inset-images {
     padding-right: 24px;
 }
 
+.text-block-right {
+    background-color: white;
+}
 
 .text-block-right div {
     position: relative;
@@ -318,7 +324,7 @@ ul h4{
 
 #peach-box {
     background-color: #FFEAD6;
-    grid-column: 2 / span 6;
+    grid-column: 2 / span 7;
     grid-row: 1 / span 7;
     width: auto;
 }
@@ -355,14 +361,12 @@ ul h4{
 /* links */
 
 .links {
-    display: flex;
-    padding-left: 10%;
-    padding-right: 10%;
     padding-top: 100px;
     background-color: #F8FDFF;
 }
 
 .link-card {
+    max-width: 400px;
     display: inline-block;
     text-align: center;
     padding-right: 24px;
