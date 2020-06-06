@@ -887,7 +887,7 @@ footer{
       
     h1 {
         font-family: 'Work Sans', sans-serif;
-        font-size: 58px;
+        font-size: 48px;
         font-weight: 300;
         line-height: 1.1;
         letter-spacing: 0px;
@@ -899,7 +899,7 @@ footer{
         font-family: 'Work Sans', sans-serif;
         font-size: 48px;
         font-weight: 300;
-        line-height: 1;
+        line-height: 1.2;
         letter-spacing: 0px;
         color: #364a53;
         opacity: 1;
@@ -942,8 +942,20 @@ footer{
     /* Hero */
 
     .hero h1 {
-        margin-left: 24px;
+        margin: 0px;
+        padding: 100px 0 48px 24px;
     }
+
+     
+    #right-img{
+        min-height: 700px;
+        object-position: left;
+    }
+    
+    #left-img {
+        display: none;
+    }
+
 
     #logo {
         font-size: 16px;
@@ -962,7 +974,7 @@ footer{
     .mobile-nav{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
         text-align: left;
         padding: 24px 24px 0 24px;
         background-color: #FFF5D3;
@@ -974,6 +986,10 @@ footer{
         opacity: 0.8;
     }
 
+    .hero-img #left-image {
+        display: none;
+    }
+
 
     
 
@@ -983,7 +999,7 @@ footer{
         padding-top: 60px;
         padding-bottom: 60px;
         margin-left: 24px;
-        width: 75%;
+        width: 85%;
     }
     
 
@@ -999,16 +1015,26 @@ footer{
     }
 
     .image-grid img {
-        width: 90%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
         display: block;
         padding: 24px;
     }
+
+    .text-block-right h3 {
+        margin: 0px;
+        padding-top: 48px;
+    }
+     .text-block-right h2 {
+         margin: 0px;
+         padding-top: 24px;
+    }
    
     .text-block-right div{ 
         position: relative;
         top: 0%;
+        margin: 0px;
         transform: translateY(0%);
         max-width: 80%;
         padding-left: 24px;
@@ -1103,7 +1129,7 @@ footer{
 
     }
     .image-grid #hatty {
-        width: 90%;
+        width: 80%;
         margin-right: auto;
         margin-left: auto;
         display: block;
@@ -1129,33 +1155,47 @@ footer{
         width: 80%;
     }
 
+    .text-block-left h3 {
+        margin: 0px;
+        padding-top: 48px;
+    }
+     .text-block-left h2 {
+         margin: 0px;
+         padding-top: 24px;
+    }
+
     /* links */
 
 
     #link-section {
-        
+        display: block;
+        margin-right: 0px;
+        margin-left: 0px;
+        width: auto;
+        padding-top: 24px;
         background-color: #F8FDFF;
-        margin: 0px;
-        padding: 0px;
     }
-
+    
     .links {
-        padding-top: 50px;
-        display: flex;
+        display: inline-block;
         justify-content: center;
-        width: 95%;
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
         justify-content: center;
-        
     }
-
+    
     .link-card {
         display: inline-block;
         text-align: center;
-        margin: 12px;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
+        margin: 0px;
     }
-
+    
     .link-card img {
+        display: block;
+        margin: 0px;
+        line-height: 0px;
         padding-bottom: 24px;
     }
 
@@ -1180,8 +1220,8 @@ footer{
         background-color: #364A53;
         padding: 24px 24px 100px 24px;
         text-align: left; 
-        margin-right: auto;
-        margin-left: auto;
+        margin-right: 0px;
+        margin-left: 0px;
     }
 
     .contact h2{
@@ -1189,10 +1229,11 @@ footer{
     }
 
     footer div{
-        display: block;
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
         background-color: #364A53;
-        height: 75px;
+        height: 100px;
         align-items: center;
         max-width: 100%;
         color: grey;
@@ -1202,5 +1243,7 @@ footer{
 
     #footer-links a {
         padding: 12px;
+        display: flex;
+        flex-direction: column;
     }
 }
