@@ -1221,7 +1221,7 @@ footer{
         display: block;
         align-content: center;
         background-color: #364A53;
-        padding: 24px 24px 100px 24px;
+        padding: 24px 24px 60px 24px;
         text-align: left; 
         margin-right: 0px;
         margin-left: 0px;
@@ -1236,12 +1236,16 @@ footer{
         flex-direction: column;
         justify-content: space-between;
         background-color: #364A53;
-        height: 100px;
+        height: 70px;
         align-items: center;
         max-width: 100%;
         color: grey;
         padding-left: 24px;
         padding-right: 24px;
+    }
+
+    footer p {
+        padding-left: 12px;
     }
 
     #footer-links a {
